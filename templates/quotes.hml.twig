@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/bubbles.css') }}" />
+{% endblock stylesheets %}
+
+{% block body %}
+	<blockquote class="speech-bubble">
+		<p>{{ quote }}</p>
+		<cite>{{ comedian }}</cite>
+	</blockquote>
+{% endblock body %}
